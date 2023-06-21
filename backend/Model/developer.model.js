@@ -1,7 +1,9 @@
+//Dette kode er hvordan tabellen ser ud og indeholder
+
 import { sequelize } from "../Config/db.sequelize.js";
 import { Model, DataTypes } from "sequelize";
 
-Datatypes
+DataTypes
 
 class developerModel extends Model { }
 

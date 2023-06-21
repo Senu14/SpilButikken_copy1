@@ -1,3 +1,5 @@
+//Dette kode opretter tabellerne i vores database ud fra vores modeller 
+
 import express from 'express'
 import { sequelize } from '../Config/db.sequelize.js'
 
