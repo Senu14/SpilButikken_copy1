@@ -2,9 +2,9 @@
 import { sequelize } from "../Config/db.sequelize.js";
 import { Sequelize, DataTypes, Model } from "sequelize";
 
-class SpilModel extends Model {}
+class GamesModel extends Model {}
 
-SpilModel.init({
+GamesModel.init({
     id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -61,9 +61,9 @@ SpilModel.init({
     }
 }, {
     sequelize,
-    modelName: 'spil',
+    modelName: 'games',
     freezeTableName: true,
     underscored: true,
 })
 
-export default SpilModel
+export default GamesModel
