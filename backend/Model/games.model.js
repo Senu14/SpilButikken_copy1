@@ -61,7 +61,7 @@ SpilModel.init({
     }
 }, {
     sequelize,
-    modelName: 'spil',
+    modelName: 'games',
     freezeTableName: true,
     underscored: true,
 })
