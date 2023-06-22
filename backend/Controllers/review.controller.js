@@ -1,8 +1,7 @@
 import reviewModel from "../Model/review.model.js"
 
-reviewModel
 
-class reviewModel {
+class reviewController {
     list = async (req, res) => {
         const result = await reviewModel.findAll({
             attributes: ["title", "comment", "rating"]

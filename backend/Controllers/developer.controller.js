@@ -1,7 +1,5 @@
 import developerModel from "../Model/developer.model.js"
 
-developerModel
-
 class developerController {
     list = async (req, res) => {
         const result = await developerModel.findAll({
