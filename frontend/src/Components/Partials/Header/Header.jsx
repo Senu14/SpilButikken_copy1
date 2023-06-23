@@ -1,33 +1,34 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import './Header.scss';
-// import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 const Header = () => {
-  // const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // const toggleMenu = () => {
-  //   setIsOpen(!isOpen);
-  // };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <div className="burger-menu">
-      {/* <button className="burger-menu__toggle" onClick={toggleMenu}>
-        {isOpen ? 'Close' : 'Open'} Menu
-      </button> */}
-
-      {/* {isOpen && ( */}
-        <ul className="burger-menu__list">
-          <li className="burger-menu__item">Home</li>
-          <li className="burger-menu__item">Products</li>
-          <li className="burger-menu__item">About</li>
-          <li className="burger-menu__item">Login</li>
-          <li className="burger-menu__item">Contact</li>
+    <header className="header">
+      
+      <button className="header__burger" onClick={toggleMenu}>
+        <span className="header__burger-line"></span>
+        <span className="header__burger-line"></span>
+        <span className="header__burger-line"></span>
+      </button>
+      {isOpen && (
+        <ul className="header__menu">
+         <Link to="/"   className='Links'> <li className="header__menu-item">Home</li></Link>
+         <Link to="/About"  className='Links'><li className="header__menu-item">About</li></Link>
+         <Link to="/products"   className='Links'><li className="header__menu-item">Product</li></Link>
+         <Link to="/login"  className='Links'> <li className="header__menu-item">Login</li></Link>
+         <Link to="/Contact"  className='Links'> <li className="header__menu-item">Contact</li></Link>
         </ul>
-      {/* )} */}
-    </div>
+      )}
+    </header>
   );
 };
-
-
 
 export default Header;

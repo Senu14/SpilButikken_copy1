@@ -1,23 +1,40 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { Route, Routes, 
+        //  RouterProvider, 
+        //  createBrowserRouter, 
+        //  createRoutesFromElements
+       } from 'react-router-dom';
 
 
 //Import Pages
-import Home from '../../Pages/Home/Home'
-import Login from '../../Pages/Login/Login'
-import Contact from '../../Pages/Contact/Contact'
-import Products from '../../Pages/Products/Products'
-import About from '../../Pages/About/About'
+import Home from '../../Pages/Home/Home';
+import Products from '../../Pages/Products/Products';
+import About from '../../Pages/About/About';
+import Contact from '../../Pages/Contact/Contact';
+import Login from '../../Pages/Login/Login';
 
-const AppRouter = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/login" element={<Login />} />
+//Layouts that wrapped the other pages
+import CollectedNav from '../../CollectNav/CollectedNav';
+
+
+  const AppRouter = () =>{
+    return (
+      <Routes>
+      <Route path="/" element={<CollectedNav />} />
+      <Route index path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
-    </Routes>
-  );
-}
+      <Route path="/Contact" element={<Contact />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/login" element={<Login />} /> 
+     
+
+      </Routes>
+
+    );
+  }
+        
+
+  
+
 
 export default AppRouter;

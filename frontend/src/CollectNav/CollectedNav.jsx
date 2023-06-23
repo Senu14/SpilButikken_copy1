@@ -1,20 +1,22 @@
-import React from 'react';
-import { NavLink, Outlet } from "react-router-dom";
+
+import { Link, Outlet } from "react-router-dom"
 
 
- const CollectedNav = () => {
+ export default function CollectedNav() {
   return (
     <div className='collected-nav'>
      <header>
         <nav>
           <h1>The Game Shope</h1>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="Products">Products</NavLink>
-          <NavLink to="About">About</NavLink>
-          
-          <NavLink to="Login">Login</NavLink>
+          <Link to="/"><span>Home</span></Link>
+            <Link to="/Products"><span>Products</span></Link>
+            <Link to="/About"><span>About</span></Link>
+            <Link to="/Contact"><span>Contact</span></Link>
+          <Link to="/login"><span>Login</span></Link>
         </nav>
       </header>
+
+
       <main>
         <Outlet />
       </main>
@@ -24,4 +26,4 @@ import { NavLink, Outlet } from "react-router-dom";
 
 
 
-export default CollectedNav;
+

@@ -3,7 +3,7 @@ import './Products.scss';
 
 const Products= () => { 
   return (
-    <div>Products</div>
+    <div className='global-body-color'>Products</div>
   )
 }
 

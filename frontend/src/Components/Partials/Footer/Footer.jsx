@@ -1,9 +1,21 @@
 import React from 'react'
 import './Footer.scss'
-function Footer() {
-  return (
-    <div>Footer</div>
-  )
-}
 
-export default Footer
+
+const Footer = () => {
+  return (
+    <footer>
+      <div>
+        <p>&copy; {new Date().getFullYear()} My Website. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+
+
+
+
+
+
