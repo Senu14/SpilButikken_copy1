@@ -2,7 +2,7 @@ import express from 'express'
 import GamesController from '../Controllers/games.controller.js';
 import { router } from './init.sequelizer.router.js';
 
-const router = express.Router()
+// const router = express.Router()
 
 const controller = new GamesController()
 
