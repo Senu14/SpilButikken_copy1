@@ -15,7 +15,7 @@ GamesModel.init({
         type: DataTypes.STRING,
         allowNull: false
     },
-    desc: {
+    description: {
         type: DataTypes.TEXT,
         allowNull: false
     },
@@ -64,6 +64,7 @@ GamesModel.init({
     modelName: 'games',
     freezeTableName: true,
     underscored: true,
+    timestamps: false
 })
 
 export default GamesModel

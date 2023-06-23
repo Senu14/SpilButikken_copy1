@@ -6,7 +6,7 @@ import { sequelize } from '../Config/db.sequelize.js'
 
 const router = express.Router()
 
-import GamesModel from '../Models/games.model.js'
+import GamesModel from '../Model/games.model.js'
 
 
 
