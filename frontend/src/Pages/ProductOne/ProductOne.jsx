@@ -23,6 +23,7 @@ function OneProduct( match ) {
   }, [id]);
 
   return (
+    <div className='global-body-color'>
     <div className="gig">
       <div className="container">
         <div className="left">
@@ -47,6 +48,7 @@ function OneProduct( match ) {
             </div>
        
       </div>
+    </div>
     </div>
   );
   }

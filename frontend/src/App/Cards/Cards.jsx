@@ -3,7 +3,7 @@ import './Cards.scss';
 
 const Cards = ({ data }) =>{
 
-     const { title, image, dic, developer } = data;
+     const { title, image, dic, developer, } = data;
 
      return( 
           <div className="card">
@@ -11,6 +11,7 @@ const Cards = ({ data }) =>{
                <div className="card-dic">{dic}</div>
                <div className="card-developer">{developer}</div>
                <img className="card-image" src={image.fullpath} alt={title} />
+             
           
           </div>
      )
