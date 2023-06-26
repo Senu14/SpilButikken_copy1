@@ -19,7 +19,9 @@ developerModel.init({
 }, {
     sequelize,
     modelName: 'developer',
-    freezeTableName: false
+    freezeTableName: false,
+    underscored: true,
+    timestamps: false
 })
 
 export default developerModel
