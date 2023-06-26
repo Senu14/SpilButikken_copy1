@@ -58,6 +58,10 @@ GamesModel.init({
     players: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    rating: {
+        type: DataTypes.INTEGER,
+        allowNull: true
     }
 }, {
     sequelize,
