@@ -3,7 +3,7 @@
 import { sequelize } from "../Config/db.sequelize.js";
 import { Model, DataTypes } from "sequelize";
 
-class developerModel extends Model { }
+class developerModel extends Model {}
 
 developerModel.init({
     id: {
@@ -13,13 +13,13 @@ developerModel.init({
     },
 
     name: {
-        type: DataTypes.VARCHAR,
+        type: DataTypes.STRING,
         allowNull: false
     }
-}), {
+}, {
     sequelize,
     modelName: 'developer',
     freezeTableName: false
-}
+})
 
 export default developerModel
