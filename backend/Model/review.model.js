@@ -48,7 +48,7 @@ reviewModel.init({
                         //ellers vil underscoren blive fjerent og det næste ord vil starte 
                        //med stort 
     sequelize,
-    modelName: review, //tabel navnet
+    modelName: 'review', //tabel navnet
 
 })
 

@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.header__logo {
+  font-weight: bold;
+}
+
+.header__burger {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.header__burger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+}
+
+.header__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__menu-item {
+  padding: 10px;
+}/*# sourceMappingURL=Header.css.map */
