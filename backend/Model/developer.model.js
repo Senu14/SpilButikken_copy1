@@ -20,7 +20,7 @@ developerModel.init({
     }
 }), {
     sequelize,
-    modelName: developer,
+    modelName: 'developer',
     freezeTableName: false
 }
 
