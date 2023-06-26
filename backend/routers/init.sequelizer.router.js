@@ -7,7 +7,7 @@ import { sequelize } from '../Config/db.sequelize.js'
 const router = express.Router()
 
 import GamesModel from '../Model/games.model.js'
-
+import developerModel from '../Model/developer.model.js'
 
 
 router.get('/init', (req, res) => {
