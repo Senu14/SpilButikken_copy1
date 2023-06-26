@@ -5,21 +5,21 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <h2>Payment Methods</h2>
-        <img src="../../../Images/pngegg.png" alt="masstercard" />
-        <img src="/path/to/payment2.png" alt="Payment Method 2" />
-        <img src="/path/to/payment3.png" alt="Payment Method 3" />
+        <p>Payment Methods</p>
+       <img src={require("../../../Assets/Images/mastercardlogo.png")} className="Payment" />
+        <img src={require("../../../Assets/Images/paypallogo.png")} className="payment" />
+        <img src={require("../../../Assets/Images/mobilepaylogo3.png")} className="payment" />
       </div>
       <div>
-        <h2>Follow Us</h2>
+        <p>Follow Us</p>
         <a href="https://www.facebook.com">
-        <img src={require("../../../Assets/Images/65585-program-messenger-logo-facebook-honors-icon.png")} alt="Facebook" />
+        <img src={require("../../../Assets/Images/65585-program-messenger-logo-facebook-honors-icon.png")}className="media" />
         </a>
         <a href="https://www.twitter.com">
-          {/* <img src={require("../../../Assets/Images/")} alt="Twitter" /> */}
+          <img src={require("../../../Assets/Images/twitterlogo.png")}className="media" />
         </a>
         <a href="https://www.instagram.com">
-        <img src={require("../../../Assets/Images/69800-logo-computer-instagram-icons-free-clipart-hq.png")} alt="Instagram" />
+        <img src={require("../../../Assets/Images/69800-logo-computer-instagram-icons-free-clipart-hq.png")}className="mediam" />
         </a>
       </div>
     </footer>
