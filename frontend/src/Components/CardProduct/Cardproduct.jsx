@@ -10,7 +10,7 @@ function ProductCard({ item }) {
                 <img src={item.image} alt="" />
                 <div className="info">
                     <div className="user">
-                      <span >{item.version}</span>
+                      <span >{item.platform_type}</span>
                       <span>{item.username}</span>
                     </div>
                     <p>{item.title}</p>         
