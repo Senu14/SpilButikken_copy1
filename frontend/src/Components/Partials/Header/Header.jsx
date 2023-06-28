@@ -21,7 +21,7 @@ const Header = () => {
       {isOpen && (
         <ul className="header__menu">
          <Link to="/"   className='Links'> <li className="header__menu-item">Home</li></Link>
-         <Link to="/products"   className='Links'><li className="header__menu-item">Product</li></Link>
+         <Link to="/products"   className='Links'><li className="header__menu-item">Products</li></Link>
          <Link to="/About"  className='Links'><li className="header__menu-item">About</li></Link>
          <Link to="/login"  className='Links'> <li className="header__menu-item">Login</li></Link>
          <Link to="/Contact"  className='Links'> <li className="header__menu-item">Contact</li></Link>
