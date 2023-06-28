@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import './Contact.scss'
+
+
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -30,7 +33,8 @@ const Contact = () => {
   };
 
   return (
-    <form className='global-body-color' onSubmit={handleSubmit}>
+    <div  className='global-body-color'>
+    <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
         <input
@@ -62,7 +66,9 @@ const Contact = () => {
       </div>
       <button type="submit">Submit</button>
     </form>
+    </div>
   );
+  
 };
 
 export default Contact;

@@ -24,7 +24,7 @@ const Footer = () => {
         <a href="https://www.instagram.com">
         <img src={require("../../../Assets/Images/69800-logo-computer-instagram-icons-free-clipart-hq.png")}className="mediam" alt=''/>
         </a>
-        <p>&copy; 2023 Company Name. All rights reserved.</p>
+        <p className='rights'>&copy; 2023 Company Name. All rights reserved.</p>
       </div>
     </footer>
   );

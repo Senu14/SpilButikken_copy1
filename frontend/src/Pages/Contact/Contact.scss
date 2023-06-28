@@ -4,9 +4,8 @@
      height: 50%;
 }
 
-
 form {
-     margin: 40px; /* Adjust the margin according to your layout */
+     margin: 40px; 
    }
    
    label {
@@ -23,14 +22,14 @@ form {
    }
    
    button[type="submit"] {
-     background-color: #007bff; /* Set your desired button background color */
-     color: #fff; /* Set your desired button text color */
+     background-color: #007bff; 
+     color: #fff; 
      border: none;
      padding: 10px 20px;
      cursor: pointer;
    }
    
    button[type="submit"]:hover {
-     background-color: #0056b3; /* Set your desired button hover background color */
+     background-color: #0056b3; 
    }
    
