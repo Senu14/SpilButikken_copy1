@@ -18,6 +18,17 @@ class GamesController {
         })
         res.json(result)
     }
+    // create = async (req, res) => {
+         
+    //     const { title, description, price, stock, image } = req.body;
+
+    //     if (title && description && price && stock  && image) {
+    //          const model = await GamesModel.create(req.body)
+    //          res.json({ newId: model.id })
+    //      } else {
+    //          res.sendStatus(418)
+    //      }
+    //  }
 }
 
 export default GamesController
