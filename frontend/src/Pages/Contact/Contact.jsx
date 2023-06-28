@@ -23,7 +23,7 @@ const Contact = () => {
     // form submission logic here
     // we can use an API call or any other method to send the form data
 
-    // Reset form fields
+  
     setName('');
     setEmail('');
     setMessage('');

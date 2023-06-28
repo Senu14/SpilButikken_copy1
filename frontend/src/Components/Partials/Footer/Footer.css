@@ -2,35 +2,31 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  background-color: #333333;
- 
 }
 
 footer div {
-  // display: flex;
+  display: flex;
   flex-direction: column;
-
 }
 
 footer p {
   margin-top: 10px;
-  color: white;
+  color: black;
 }
 
 footer img {
   width: 40px;
   height: 20px;
-  margin-right: 10px;
 }
 
 .footer-payment {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer-media {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
