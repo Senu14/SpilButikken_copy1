@@ -1,5 +1,6 @@
 import React from 'react'
-import './Home.scss'
+import './Home.scss';
+
 
 const Home= () => {
   return (
@@ -29,7 +30,12 @@ const Home= () => {
       Necessitatibus veniam ducimus eligendi nihil, cumque ab eveniet 
       modi architecto quidem, non odit saepe facere voluptas esse mollitia 
       illo fuga exercitationem id dicta iusto eaque numquam quaerat 
-      ad! Fugit velit beatae laudantium.</p>
+      ad! Fugit velit beatae laudantium.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Necessitatibus veniam ducimus eligendi nihil, cumque ab eveniet 
+      modi architecto quidem, non odit saepe facere voluptas esse mollitia 
+      illo fuga exercitationem id dicta iusto eaque numquam quaerat 
+      ad! Fugit velit beatae laudantium</p>
     </div>
   )
 }
