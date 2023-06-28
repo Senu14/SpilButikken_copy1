@@ -1,26 +1,22 @@
 .gigs {
-     width: 100%;
-     display: flex;
-     justify-content: center;
-   
-     .container {
-       width: 1400px;
-       padding: 30px 0px;
-       display: flex;
-       flex-wrap: wrap;
-       align-items: center;
-       gap: 15px;
-   
-       .cards {
-         
-         display: flex;
-         justify-content: space-between;
-         flex-wrap: wrap;
-       } 
-     } 
- }
-   
-       
-     
- 
-   
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1400px;
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+
+    .cards {
+
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+    }
+  }
+}
