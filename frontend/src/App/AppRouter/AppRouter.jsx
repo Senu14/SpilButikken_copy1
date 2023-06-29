@@ -1,10 +1,5 @@
 import React from 'react';
-import { Route, Routes, 
-        //  RouterProvider, 
-        //  createBrowserRouter, 
-        //  createRoutesFromElements
-       } from 'react-router-dom';
-
+import { Route, Routes, } from 'react-router-dom';
 
 //Import Pages
 import Home from '../../Pages/Home/Home';
@@ -17,7 +12,6 @@ import OneProduct from '../../Pages/ProductOne/ProductOne';
 //Layouts that wrapped the other pages
 import CollectedNav from '../../CollectNav/CollectedNav';
 
-
   const AppRouter = () =>{
     return (
       <Routes>
@@ -29,14 +23,8 @@ import CollectedNav from '../../CollectNav/CollectedNav';
       <Route path="/login" element={<Login />} /> 
       <Route path="/one/:id" element={<OneProduct />} /> 
      
-
       </Routes>
-
     );
   }
-        
-
-  
-
 
 export default AppRouter;

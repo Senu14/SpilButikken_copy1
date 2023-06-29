@@ -28,8 +28,8 @@ const Products = () => {
           <input type="number" value={maxPrice} onChange={handleMaxPriceChange} placeholder="Max price" />
           <div className="cards">
           {
-            data.map((item) => (
-              <ProductCard key={item.id} item={item} udgave />
+            data.map((item) => ( //looping the data with Map
+              <ProductCard key={item.id} item={item} udgave /> 
             ))
           }
           </div>

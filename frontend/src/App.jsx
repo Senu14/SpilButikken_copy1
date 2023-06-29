@@ -4,6 +4,7 @@ import AppRouter from './App/AppRouter/AppRouter';
 import './App.scss'
 function App() {
   return (
+    // AppRouter component with content the other routes of each page
     <>
       <Header />
       <AppRouter />

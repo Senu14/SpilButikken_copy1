@@ -1,6 +1,8 @@
 
 import { Link, Outlet } from "react-router-dom"
 
+// sets up a navigation bar with multiple links using React Router. 
+//The content of each link will be rendered in the <Outlet> 
 
  export default function CollectedNav() {
   return (
