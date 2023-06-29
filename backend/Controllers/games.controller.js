@@ -1,5 +1,6 @@
 import GamesModel from '../Model/games.model.js'
-import { Op } from 'sequelize'; // work with SQL filter
+import { Op } from 'sequelize'; // Op (Operations) is a Sequelize library, which is an ORM for Node.js, 
+                                //helps to work with SQL filter.
 
 class GamesController {
     list = async (req, res) => {

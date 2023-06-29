@@ -1,6 +1,6 @@
 // Model er den måde API'et vil blive visuelt opsat på 
 import { sequelize } from "../Config/db.sequelize.js";
-import { Sequelize, DataTypes, Model } from "sequelize";
+import { DataTypes, Model } from "sequelize";
 
 class GamesModel extends Model {}
 
