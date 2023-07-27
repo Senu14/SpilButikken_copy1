@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './ProductOne.scss'
-import axios from 'axios'// sending reqst from the frontend with the backend
+import axios from 'axios'// JavaScript library that is used for making HTTP requests
+                        // from a web browser or a Node.js application.
 import { useParams } from 'react-router-dom';
 
 function OneProduct( match ) {
@@ -11,7 +12,7 @@ function OneProduct( match ) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await axios.get(`http://localhost:4000/games/${id}`); //fatch for th details of the specific card data
+        const result = await axios.get(`http://localhost:4000/games/${id}`); //fatch for the details of the specific card data
         console.log('Fetched data:', result.data); 
         if (result.data.length > 0) {setProduct(result.data[0])}
         else{console.error("no data received")}
